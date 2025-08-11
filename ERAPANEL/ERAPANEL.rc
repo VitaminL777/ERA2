@@ -1,0 +1,329 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Русский (Россия) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 25, 1\r\n"
+    "#pragma code_page(1251)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\ERAPANEL.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.rus\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,0,0,0
+ PRODUCTVERSION 2,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041904e3"
+        BEGIN
+            VALUE "CompanyName", "VitaminL"
+            VALUE "FileDescription", "ERAPANEL DLL"
+            VALUE "FileVersion", "2.0.0.0"
+            VALUE "InternalName", "ERAPANEL"
+            VALUE "LegalCopyright", "© 2020 Все права зарезервированы"
+            VALUE "OriginalFilename", "ERAPANEL.DLL"
+            VALUE "ProductName", "ERAPANEL Динамически заггружаемая библиотека"
+            VALUE "ProductVersion", "2.0.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x419, 1251
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PANEL DIALOGEX 0, 0, 143, 57
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "ERA Control"
+FONT 8, "Tahoma", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT,7,17,128,15,ES_AUTOHSCROLL,WS_EX_STATICEDGE
+    PUSHBUTTON      "Сохранить",IDC_SAVE,8,37,55,15
+    PUSHBUTTON      "Отменить",IDC_CANCEL,80,37,55,15
+END
+
+IDD_REPEAT DIALOG 0, 0, 202, 66
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Connect"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Отмена",IDCANCEL,74,37,50,14
+    LTEXT           "Производится попытка подключения",IDC_STATIC,33,11,133,8
+    CONTROL         "Progress1",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,13,26,174,6
+END
+
+IDD_ERATIMER DIALOGEX 0, 0, 172, 96
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Таймер записи"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Set",IDSET,117,77,50,14
+    CONTROL         "",IDC_DTSRLEN,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,109,17,55,16
+    CONTROL         "Автокопирование по готов.",IDC_CHAUTOCOPY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,79,108,10
+    GROUPBOX        "Имя копируемого файла записи:",IDC_STATIC2,2,40,169,37
+    CONTROL         "",IDC_DTSRNT,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,17,17,55,16
+    GROUPBOX        "по времени плеера",IDC_STATIC,3,8,74,30
+    GROUPBOX        "по длительности",IDC_STATIC,93,8,74,30
+    CONTROL         "",IDC_CHSRLEN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,97,19,8,10
+    CONTROL         "",IDC_CHSRNT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,19,8,10
+    LTEXT           "Остановка записи:",IDC_STATIC,54,0,65,8
+    CONTROL         "",IDC_PROGRCOPY,"msctls_progress32",PBS_SMOOTH | WS_BORDER,6,60,108,12
+    DEFPUSHBUTTON   "Abort Copy",IDABORT,117,59,50,14
+    LTEXT           "",IDC_STFNAME,9,50,154,10
+    LTEXT           "",IDC_FREADY,8,62,105,8,NOT WS_VISIBLE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_ICON1               ICON                    "res\\Sound.ico"
+
+IDR_ICON2               ICON                    "res\\Camera.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_REC0                BITMAP                  "bmp\\Rec_0.bmp"
+
+IDB_REC1                BITMAP                  "bmp\\Rec_1.bmp"
+
+IDB_REC2                BITMAP                  "bmp\\Rec_2.bmp"
+
+IDB_REC3                BITMAP                  "bmp\\Rec_3.bmp"
+
+IDB_PAUSE0              BITMAP                  "bmp\\Pause_0.bmp"
+
+IDB_PAUSE1              BITMAP                  "bmp\\Pause_1.bmp"
+
+IDB_PAUSE2              BITMAP                  "bmp\\Pause_2.bmp"
+
+IDB_PAUSE3              BITMAP                  "bmp\\Pause_3.bmp"
+
+IDB_PAUSE4              BITMAP                  "bmp\\Pause_4.bmp"
+
+IDB_PAUSE5              BITMAP                  "bmp\\Pause_5.bmp"
+
+IDB_STOP0               BITMAP                  "bmp\\Stop_0.bmp"
+
+IDB_STOP1               BITMAP                  "bmp\\Stop_1.bmp"
+
+IDB_STOP2               BITMAP                  "bmp\\Stop_2.bmp"
+
+IDB_OFF1                BITMAP                  "bmp\\Off_1.bmp"
+
+IDB_OFF2                BITMAP                  "bmp\\Off_2.bmp"
+
+IDB_EXIT1               BITMAP                  "bmp\\Exit_1.bmp"
+
+IDB_EXIT2               BITMAP                  "bmp\\Exit_2.bmp"
+
+IDB_MONO1               BITMAP                  "bmp\\Mono_1.bmp"
+
+IDB_MONO2               BITMAP                  "bmp\\Mono_2.bmp"
+
+IDB_MONO3               BITMAP                  "bmp\\Mono_3.bmp"
+
+IDB_MONO4               BITMAP                  "bmp\\Mono_4.bmp"
+
+IDB_MODE0               BITMAP                  "bmp\\Mode_0.bmp"
+
+IDB_MODE1               BITMAP                  "bmp\\Mode_1.bmp"
+
+IDB_MODE2               BITMAP                  "bmp\\Mode_2.bmp"
+
+IDB_MODE3               BITMAP                  "bmp\\Mode_3.bmp"
+
+IDB_MODE4               BITMAP                  "bmp\\Mode_4.bmp"
+
+IDB_MODE5               BITMAP                  "bmp\\Mode_5.bmp"
+
+IDB_PHOTO1              BITMAP                  "bmp\\Photo_1.bmp"
+
+IDB_PHOTO2              BITMAP                  "bmp\\Photo_2.bmp"
+
+IDB_PHOTO3              BITMAP                  "bmp\\Photo_3.bmp"
+
+IDB_PHOTO4              BITMAP                  "bmp\\Photo_4.bmp"
+
+IDB_WAIT                BITMAP                  "bmp\\WaitRec.bmp"
+
+IDB_MODERV              BITMAP                  "bmp\\Mode_RV.bmp"
+
+IDB_MODERS              BITMAP                  "bmp\\Mode_RS.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR1             CURSOR                  "bmp\\cursor1.cur"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_PANEL, DIALOG
+    BEGIN
+        RIGHTMARGIN, 142
+        VERTGUIDE, 8
+        VERTGUIDE, 135
+        BOTTOMMARGIN, 56
+    END
+
+    IDD_REPEAT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 195
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 51
+    END
+
+    IDD_ERATIMER, DIALOG
+    BEGIN
+        RIGHTMARGIN, 171
+        BOTTOMMARGIN, 94
+        HORZGUIDE, 60
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_PANEL AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_ERATIMER AFX_DIALOG_LAYOUT
+BEGIN
+    0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    100, 0, 0, 0,
+    0, 0, 0, 0
+END
+
+#endif    // Русский (Россия) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE 25, 1
+#pragma code_page(1251)
+#endif //_WIN32
+#include "res\ERAPANEL.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.rus\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,1 @@
+unsigned long _stdcall ThDecode(void*);

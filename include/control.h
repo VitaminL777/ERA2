@@ -1,0 +1,13 @@
+unsigned long _stdcall ThControl(void*);
+int DataComm(PSendStruct PSS, SOCKET *PS, BOOL Response=0);
+int CreateTerminal(char* Addr);
+int SendCommand(char* Addr, WORD CO, char* Data);
+int TerminalSendCommand(WORD CO, char* Data, BOOL Response=0);
+int TerminalSendCommand(WORD CO, U64D* pUD, BOOL Response=0);
+int TerminalSendCommand(PDataContainer PDC, BOOL Response=0);
+int TerminalSendCommandAndState(WORD CO, PERAState pEraSt, BOOL Response = 0);
+int CreateFullConnect(char* ConnectTo);
+int IntCloseAll();
+int LTChangeStateByRecordState(/*PanelData PanDat, ERAState EraState*/);
+int LTSetTime(/*PanelData PanDat, ERAState EraState*/);
+int LTGetTime(/*PanelData PanDat, ERAState EraState*/);

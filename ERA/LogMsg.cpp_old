@@ -1,0 +1,60 @@
+#include "windows.h"
+
+int LogMsg(LPSTR Wrkdir,LPSTR LogMessage){
+
+
+SYSTEMTIME STLOG;
+HANDLE hFLog;
+int ist;
+int NOpen=5;
+char FullLogName[50];
+char StMsg[60];
+DWORD NOBW_FLOG;
+
+NOpen=5;
+FillMemory(StMsg,29,48);
+ist=0;
+GetSystemTime(&STLOG);
+if(STLOG.wDay<10)
+ist++;
+_ultoa(STLOG.wDay,&StMsg[ist],10);
+ist=2;
+StMsg[ist]=0x2e;
+ist++;
+if(STLOG.wMonth<10)
+ist++;
+_ultoa(STLOG.wMonth,&StMsg[ist],10);
+ist=5;
+StMsg[ist]=32;
+ist++;
+if(STLOG.wHour<10)
+ist++;
+_ultoa(STLOG.wHour,&StMsg[ist],10);
+ist=8;
+StMsg[ist]=58;
+ist++;
+if(STLOG.wMinute<10)
+ist++;
+_ultoa(STLOG.wMinute,&StMsg[ist],10);
+strcat(StMsg,"  ");
+strcat(StMsg,LogMessage);
+strcat(StMsg,"\r\n");
+strcpy(FullLogName,Wrkdir);
+strcat(FullLogName,"\\");
+strcat(FullLogName,"ERA.log");
+openLog:
+hFLog=CreateFile(FullLogName, GENERIC_READ|GENERIC_WRITE, FILE_SHARE_READ, 0,
+	OPEN_ALWAYS, FILE_ATTRIBUTE_ARCHIVE, 0);
+if(hFLog==INVALID_HANDLE_VALUE){
+	Sleep(1);
+	NOpen--;
+	if(NOpen){
+		goto openLog; }
+	else{return 0;}
+}
+SetFilePointer(hFLog,NULL,NULL,FILE_END);
+WriteFile(hFLog,StMsg,strlen(StMsg),&NOBW_FLOG,NULL);
+
+CloseHandle(hFLog);
+ return 1;
+}

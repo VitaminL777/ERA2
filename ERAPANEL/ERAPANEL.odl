@@ -1,0 +1,16 @@
+// ERAPANEL.odl : type library source for ERAPANEL.dll
+
+// This file will be processed by the MIDL compiler to produce the
+// type library (ERAPANEL.tlb).
+
+[ uuid(F71BAC0F-CD43-4572-B550-A1F2835A9059), version(1.0) ]
+library ERAPANEL
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

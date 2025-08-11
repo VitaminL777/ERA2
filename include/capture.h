@@ -1,0 +1,1 @@
+unsigned long _stdcall ThCapture(void*);

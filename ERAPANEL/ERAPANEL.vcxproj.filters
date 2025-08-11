@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{53ad794e-dd99-4c99-8240-58abd46df15d}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{6579a708-3ed7-444a-a16d-b922e32e6f04}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{2fdf29b7-d629-4455-9c8d-80c41f60c835}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cpau.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ERAPANEL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Panel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcCmdFunc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Repeat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoRecord.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MediaFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Photo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CRButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CERATimer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ERAPANEL.def">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="bmp\cursor1.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ERAPANEL.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="ERAPANEL.odl">
+      <Filter>Source Files</Filter>
+    </Midl>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ERAPANEL.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cpau.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ERAPANEL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Panel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcCmdFunc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="psapi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Repeat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MediaFile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Photo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CRButton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CERATimer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Importf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Importf.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\Camera.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bmp\exit_1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bmp\exit_2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bmp\Mode_0.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bmp\Mode_1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bmp\Mode_2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bmp\Mode_3.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bmp\Mono_1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bmp\Mono_2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bmp\Mono_3.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bmp\Mono_4.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bmp\Off_1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bmp\Off_2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bmp\Pause_0.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bmp\Pause_1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bmp\Pause_2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bmp\Pause_3.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bmp\Pause_4.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bmp\Pause_5.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bmp\Rec_0.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bmp\Rec_1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bmp\Rec_2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bmp\Rec_3.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Sound.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bmp\Stop_0.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bmp\Stop_1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bmp\Stop_2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bmp\bitmap1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bmp\Photo_1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bmp\Photo_2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bmp\Mode_4.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bmp\Mode_5.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bmp\Photo_3.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bmp\Photo_4.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bmp\bitmap2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bmp\bitmap3.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bmp\WaitRec.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bmp\bitmap5.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bmp\bitmap6.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bmp\Mode_RV.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bmp\Mode_RS.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

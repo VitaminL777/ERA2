@@ -1,0 +1,13 @@
+void InitPPanelData(PPanelData PPD);
+int PreparePcmFile();
+int CompletePcmFile();
+void CreateNameFromTime(char *PName);
+void CreateFullName(char *PName, int Type = MP3_NAME);
+int FNSpaceHandler(char *FileName);
+int StartVideoRecord();
+int StopVideoRecord();
+int StartAudio2Record();
+int StopAudio2Record();
+int UnionAVProc();
+unsigned long _stdcall ThStopVideo(void*);
+unsigned long _stdcall ThUnionAVP(void*);
